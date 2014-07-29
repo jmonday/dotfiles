@@ -1,0 +1,73 @@
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
+
+*customization: -color
+XTerm*termName: xterm-256color
+
+! --- fonts ---
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 11
+
+! --- special colors ---
+
+XTerm*background: #222222
+XTerm*foreground: #ffffff
+
+! --- standard colors ---
+
+! black
+XTerm*color0: #1d1d1d
+
+! bright_black
+XTerm*color8: #3b3b3b
+
+! red
+XTerm*color1: #ff2e85
+
+! bright_red
+XTerm*color9: #ffffff
+
+! green
+XTerm*color2: #5fbd00
+
+! bright_green
+XTerm*color10: #ffffff
+
+! yellow
+XTerm*color3: #ffa82e
+
+! bright_yellow
+XTerm*color11: #ffffff
+
+! blue
+XTerm*color4: #2e85ff
+
+! bright_blue
+XTerm*color12: #ffffff
+
+! magenta
+XTerm*color5: #a82eff
+
+! bright_magenta
+XTerm*color13: #ffffff
+
+! cyan
+XTerm*color6: #2effa8
+
+! bright_cyan
+XTerm*color14: #ffffff
+
+! white
+XTerm*color7: #e9e9e9
+
+! bright_white
+XTerm*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
