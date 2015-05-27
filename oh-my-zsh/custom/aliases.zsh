@@ -1,3 +1,6 @@
+alias "!tasks"='arc tasks'
+alias "!t"='arc tasks'
+alias todo='arc todo'
 alias ccd='app/console cache:clear --env=dev'
 alias ccp='app/console cache:clear --env=prod --no-debug'
 alias sf='app/console'

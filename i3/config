@@ -6,16 +6,16 @@
 # --------------------------------------------------
 set $mod  Mod1
 set $ctrl Control
-set $ws1 one
-set $ws2 two
-set $ws3 three
-set $ws4 four
-set $ws5 five
-set $ws6 six
-set $ws7 seven
-set $ws8 eight
-set $ws9 nine
-set $ws0 ten
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws0 10
 
 # --------------------------------------------------
 # New windows will use a 1 pixel border
@@ -182,6 +182,31 @@ bindsym $mod+Shift+9 move workspace $ws9
 bindsym $mod+Shift+0 move workspace $ws0
 
 # --------------------------------------------------
+# Automatically assign workspace to screen
+# to find screens: xrandr --current
+# --------------------------------------------------
+workspace $ws1 output DVI-I-1
+workspace $ws2 output DVI-I-1
+workspace $ws3 output DVI-I-1
+workspace $ws4 output DVI-I-1
+workspace $ws5 output VGA-0
+workspace $ws6 output DVI-I-1
+workspace $ws0 output DVI-I-1
+
+# --------------------------------------------------
+# automatically assign clients to specific workspace
+# to find the window class, run 'xprop' then click
+# on window. look for WM_CLASS
+# --------------------------------------------------
+assign [class="Chromium"] $ws1
+assign [class="jetbrains-phpstorm"] $ws2
+assign [class="Filezilla"] $ws3
+assign [class="Thunderbird"] $ws4
+assign [class="XTerm"] $ws5
+assign [class="Gimp"] $ws6
+assign [class="Firefox"] $ws0
+
+# --------------------------------------------------
 # reload the configuration file
 # --------------------------------------------------
 bindsym $mod+Shift+C reload
@@ -239,13 +264,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 # --------------------------------------------------
 bar {
-        # status_command i3status
         status_command i3status --config ~/.i3/i3status.conf
-        # mode           hide
-        # modifier       Mod1
         position       top
         tray_output    none
-        font           -*-helvetica-medium-r-*-*-10-*-*-*-*-*-*-*
+        font pango:Source Sans Pro
+        #font           -*-helvetica-medium-r-*-*-10-*-*-*-*-*-*-*
 
         colors {
             background #2e2e2e
