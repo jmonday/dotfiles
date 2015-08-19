@@ -27,6 +27,7 @@ new_window 1pixel
 # --------------------------------------------------
 # for_window [window_role="pop-up"] floating enable
 for_window [class="Xfce4-notifyd"] floating enable; border none; focus mode_toggle
+for_window [title="Authy" class="Chromium"] floating enable; border none; focus mode_toggle
 
 # --------------------------------------------------
 # font for window titles. ISO 10646 = Unicode
